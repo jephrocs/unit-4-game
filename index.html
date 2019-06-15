@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+            total score.</p>
+        <p>You win the game by matching your total score to random number, you lose the game if your total score
+            goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the value of each crystal</p>
+        <div class="col-lg-4">
+                <div class="card">
+                  <h3 class="card-header">Crystals</h3>
+        
+                  <div class="Crystals">
+                    <button id="button-1" class="btn btn-primary number" value="1"><span>1</span></button>
+                    <button id="button-2" class="btn btn-primary number" value="2"><span>2</span></button>
+                    <button id="button-3" class="btn btn-primary number" value="3"><span>3</span></button>
+                    <button id="button-plus" class="btn btn-danger operator" value="plus"><span>+</span></button>
+  
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Result Card -->
+              <div class="col-lg-6">
+                <div class="card">
+                  <h3 class="card-header">Score</h3>
+                  <div class="card-body">
+                    <h1 id="first-number"></h1>
+                    <h1 id="operator"></h1>
+                    <h1 id="second-number"></h1>
+                    <hr>
+                    <h1 id="result"></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+</body>
+</html>
